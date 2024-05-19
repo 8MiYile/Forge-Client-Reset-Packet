@@ -140,7 +140,7 @@ public class ClientReset {
 			Minecraft.getInstance().getClientPackSource().serverPack = null;
 
 			// Clear
-			Minecraft.getInstance().clearLevel(new GenericDirtMessageScreen(Component.literal("Negotiating..."/*"connect.negotiating"*/)));
+			Minecraft.getInstance().clearLevel(new GenericDirtMessageScreen(Component.literal("clientresetpacket.title.negotiating"/*"connect.negotiating"*/)));
 			try {
 				context.getNetworkManager().channel().pipeline().remove("forge:forge_fixes");
 			} catch (NoSuchElementException ignored) {
